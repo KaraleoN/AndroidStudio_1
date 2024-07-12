@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1cd44"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="REGISTER"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRegister"
+        android:layout_marginTop="32dp"
+        android:hint="Username"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUsername"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassword"
+        android:layout_marginTop="32dp"
+        android:text="NEXT"
+        android:background="#FFFFFF"
+        android:textColor="#a1cd44"
+        android:padding="12dp"/>
+
+    <ImageView
+        android:id="@+id/imageTrivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/baseline_car_rental_24"/>
+
+    <TextView
+        android:id="@+id/textTrivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageTrivia"
+        android:layout_marginTop="41dp"
+        android:text="Trivia"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</RelativeLayout>
